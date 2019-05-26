@@ -1,5 +1,4 @@
 # NETsteg: Network-layer Steganography [![GPLv3 license](https://img.shields.io/badge/license-GPLv3-blue.svg)](https://github.com/chrispetrou/NETsteg/blob/master/LICENSE)
-* * *
 
 ### What is it?
 
@@ -48,10 +47,11 @@ Our implementation is broken in two parts:
 
 ### Scripts in action:
 
-![](netsteg.png)
-
+<img src="images/netsteg.png" width="90%">
 
 >   And if we observe the __steg.pcac__ file produced by the __decoder.py__ script, we see that it actually looks like a simple ping traffic with the only difference that the TTL values get changed very often and take only `4 different values` (the ttl takes only 4 different values because we use two msbs for data, so `2^2=4`).
+
+<img src="images/pcap.png" width="90%">
 
 ### Requirements:
 
