@@ -45,6 +45,10 @@ Our implementation is broken in two parts:
 
 > __Note:__ The code is very simple and is only to demonstrate the basic idea. Of course it could easily be adapted for more complex scenarios.
 
+### How to detect?
+
+A simple detection heuristic would be to observe the traffic and try to identify if between two (_or even more_) IPs the TTL-field takes specific discrete values.
+
 ### Scripts in action:
 
 <img src="images/netsteg.png" width="90%">
