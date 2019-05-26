@@ -2,7 +2,7 @@
 
 ### What is it?
 
-The above scripts are PoC of a steganographic method which
+The above scripts are a PoC of a steganographic method which
 is used for hiding and transmitting data in the `Network Layer` 
 of an application using some most-significant-bits (_msbs_) in the Time-To-Live (_TTL_) field in the IP header.
 
@@ -12,7 +12,7 @@ I inspired and adapted the idea from `Chet Hosmer & Michael Raggo`, which is des
 
 TTL is an 8-bit field in the ip header. That means its values can range from 0 - 255 or in binary from `00000000` to `11111111`.  But `IPv4` is a best effort protocol. This in combination with the expansion of the internet makes kind of unnecessary to make use of all 8-bits provided for the TTL-field.
 
-So what if we used only the 6 lsbs of the 8 bits provided for the ttl and use the 2 msbs for data. This could surprisingly work cause the worst case of `TTL = 00111111 = 63 hops` is enough for the modern networks to operate (don't also forget that some operating systems also use 64 as the initial default value for the TTL field).
+So what if we used only the 6 lsbs of the 8 bits provided for the ttl and use the 2 msbs for data. This could surprisingly work cause the worst case of `TTL = 00111111 = 63 hops` is enough for the modern networks to operate (_some operating systems also use 64 as the initial default value for the TTL field_).
 
 In this way the 8-bit TTL field would look like this:
 
@@ -39,7 +39,7 @@ and then would translate them into ascii text.
 
 ### **Python Implementation**
 
-Our implementation is broken in two parts:
+The implementation is broken in two parts:
 * The `encoder.py` which is used to transmit the data using the above technique
 * And the `decoder.py` which is the receiver
 
