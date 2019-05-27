@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*-
 
 import logging
+import binascii
 logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
 from scapy.all import *
 from scapy.utils import PcapWriter
-import binascii
 
 msg = []
 pcap_file = "steg.pcap"
