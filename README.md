@@ -1,4 +1,5 @@
-# NETsteg: Network-layer Steganography [![GPLv3 license](https://img.shields.io/badge/license-GPLv3-blue.svg)](https://github.com/chrispetrou/NETsteg/blob/master/LICENSE)
+# NETsteg: Network-layer Steganography 
+[![GPLv3 license](https://img.shields.io/badge/license-GPLv3-blue.svg)](https://github.com/chrispetrou/NETsteg/blob/master/LICENSE)
 
 ### What is it?
 
